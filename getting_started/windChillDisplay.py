@@ -1,3 +1,6 @@
+# This program asks for an input of temperature and clarification on if that temp is F or C,
+#   and returns the wind chill based on various wind speeds
+
 # Function to find the wind chill (F) based on temp (F) and the wind speed
 def windChill(temp, windSpeed):
     return 35.74 + (0.6215*temp) - 35.75*(pow(windSpeed, 0.16)) + 0.4275*temp*(pow(windSpeed, 0.16))
