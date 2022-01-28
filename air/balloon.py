@@ -14,11 +14,12 @@ class Balloon:
     def decrease_air(self, delta_ms):
         self.volume_ml -= (self.volume_ml/2) * delta_ms
     
-    def increase_air(self, amount):
-        pass
+    def fill(self, volume_ml):
+        if not self.popped:
+            self.volume_ml += volume_ml
 
     def seal(self):
-        pass
+        self.sealed = True
 
     def update(self, time_ms):
         delta_ms = time_ms - self.update_time_ms
