@@ -1,6 +1,6 @@
 import time
 import random
-from clown import Clown
+from game.clown import Clown
 
 def current_time_ms():
     return round(time.time() * 1000)
@@ -17,3 +17,5 @@ for i in range(10):
 
 for balloon in balloon_list:
     print(balloon)
+
+print(clown)

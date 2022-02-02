@@ -17,3 +17,6 @@ class Tank:
         if air_type != None:
             self.air_type = air_type
         self.volume_L = self.max_volume_L
+    
+    def checkVolume(self):
+        return self.volume_L > 0
