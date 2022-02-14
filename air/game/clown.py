@@ -1,13 +1,14 @@
-from game.air_tank import Tank
+from game.air_tank import AirTank
 from game.wallet import Wallet
 from game.balloon import Balloon
+from game.clown_car import ClownCar
 import random
 
 class Clown:
     def __init__(self) -> None:
-        self._tank = Tank("Helium")
+        self._tank = AirTank("Helium")
         self._wallet = Wallet(25)
-
+        self._car = ClownCar()
         self._tank.fill()
 
     def buy_balloon(self, cost) -> Balloon:
