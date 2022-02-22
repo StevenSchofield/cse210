@@ -131,3 +131,8 @@ CSE210-02/
 CSE210-03/
 CSE210-04/
 CSE210-04-/
+CSE210-04/game/casting/actor.py
+CSE210-04/game/shared/point.py
+CSE210-04/game/services/keyboard_service.py
+CSE210-04/game/directing/director.py
+CSE210-04/game/casting/artifact.py
