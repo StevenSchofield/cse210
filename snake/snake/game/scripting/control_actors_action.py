@@ -46,4 +46,7 @@ class ControlActorsAction(Action):
             self._direction = Point(0, constants.CELL_SIZE)
         
         snake = cast.get_first_actor("snakes")
-        snake.turn_head(self._direction)
+
+        # Only turn the snake if the current velocity is not the reverse of the previous velocity
+        if not self._direction.reverse().equals(snake.get_head().get_velocity()):
+            snake.turn_head(self._direction)
