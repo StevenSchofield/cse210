@@ -1,3 +1,6 @@
+from game.casting.cast import Cast
+
+
 class Action:
     """A thing that is done.
     
@@ -5,7 +8,7 @@ class Action:
     it has one method, execute(), which should be overridden by derived classes.
     """
 
-    def execute(self, cast, script):
+    def execute(self, cast:Cast, script):
         """Executes something that is important in the game. This method should be overriden by 
         derived classes.
 

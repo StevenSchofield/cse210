@@ -1,9 +1,13 @@
 from game.scripting.action import Action
+from game.casting.actor import Actor
 
-
-# TODO: Implement MoveActorsAction class here! 
-
-# Override the execute(cast, script) method as follows:
-# 1) get all the actors from the cast
-# 2) loop through the actors
-# 3) call the move_next() method on each actor
+class MoveActorsAction(Action):
+    """The action of moving all actors in a given cast
+    """
+    def execute(self, cast, script):
+        """Executing the action of moving all actors in a given cast
+        """
+        actors = cast.get_all_actors()
+        for i in range(len(actors)):
+            actor:Actor = actors[i]
+            actor.move_next()
