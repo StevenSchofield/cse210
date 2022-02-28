@@ -3,7 +3,6 @@ import constants
 from game.casting.actor import Actor
 from game.shared.point import Point
 
-
 class Food(Actor):
     """
     A tasty item that snakes like to eat.
