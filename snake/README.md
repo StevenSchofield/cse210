@@ -33,4 +33,4 @@ root                    (project root folder)
 
 ## Authors
 ---
-* TODO: Add your name and email here
+* Steven Schofield - sch21093@byui.edu
