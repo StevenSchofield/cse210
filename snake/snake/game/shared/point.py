@@ -80,3 +80,7 @@ class Point:
             Point: A new Point that is scaled.
         """
         return Point(self._x * factor, self._y * factor)
+    
+    def __str__(self) -> str:
+        """Returns the x and y in string form"""
+        return f"{self._x}, {self._y}"
