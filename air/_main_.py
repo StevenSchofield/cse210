@@ -1,21 +1,14 @@
 import time
 import random
 from game.clown import Clown
+from game.child import Child
+from game.person import Person
 
 def current_time_ms():
     return round(time.time() * 1000)
 
+persons = [Clown(), Person(), Child(), Clown()]
 
-print(current_time_ms)
-
-clown = Clown()
-
-balloon_list = []
-
-for i in range(10):
-    balloon_list.append(clown.buy_balloon(random.randint(1,12)))
-
-for balloon in balloon_list:
-    print(balloon)
-
-print(clown)
+for i in range(len(persons)):
+    person:Person = persons[i]
+    print(f"This one says: {person.speak()}")

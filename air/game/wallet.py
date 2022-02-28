@@ -2,7 +2,7 @@ import time
 
 class Wallet:
     class Transaction:
-        def __init__(self, amount) -> None:
+        def __init__(self, amount=0) -> None:
             self._amount = amount
             self._timestamp = time.time()
         
