@@ -38,3 +38,4 @@ root                    (project root folder)
 ## Authors
 ---
 * Matt Manley (manleym@byui.edu)
+* Steven Schofield (sch21093@byui.edu)
